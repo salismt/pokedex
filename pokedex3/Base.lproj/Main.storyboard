@@ -40,6 +40,7 @@
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jPV-xk-k89">
                                 <rect key="frame" x="20" y="129" width="335" height="518"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mbS-Ty-DOJ">
                                     <size key="itemSize" width="105" height="105"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -56,7 +57,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-lN-EpD">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
-                                                    <color key="backgroundColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="a6J-EH-mkK"/>
                                                     </constraints>
@@ -70,6 +70,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Lvq-gM-PRw" firstAttribute="leading" secondItem="6LA-I8-7Xl" secondAttribute="leading" id="PKd-QD-w9g"/>
                                             <constraint firstItem="R7g-lN-EpD" firstAttribute="leading" secondItem="6LA-I8-7Xl" secondAttribute="leading" id="R3T-lr-LbK"/>
@@ -105,6 +106,9 @@
                             <constraint firstAttribute="trailing" secondItem="cZX-8d-5pS" secondAttribute="trailing" id="riS-HR-ngE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="jPV-xk-k89" id="oOm-L2-56U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
